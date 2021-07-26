@@ -1,17 +1,44 @@
-.hello {
-  color: red;
-  /* background: url('./backgraund.jpg'); */
-  /* width: 100%; */
-  /* background-position: center; */
-  /* background-attachment: fixed; */
-}
-
-
 body {
-  background: linear-gradient(to bottom, rgba(41, 41, 179, 0.5), rgba(37, 41, 170, 0.5)),
+  background: linear-gradient(to bottom, rgba(15, 15, 19, 0.7), rgba(15, 15, 19, 0.7)),
   url(./backgraund.jpg);
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
+}
+
+.black-back {
+  background-color: rgba(0,0, 0, 0.5);
+}
+
+.font-style {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+}
+
+.font {
+  font-family: 'Crimson Text', serif;
+}
+
+.main-font {
+  font-family: 'Inconsolata', monospace;
+}
+
+
+.button-nav {
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  transition: transform 0.3s;
+}
+
+.button-nav:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.button-nav.active {
+  border-bottom: 2px solid #eee;
 }
