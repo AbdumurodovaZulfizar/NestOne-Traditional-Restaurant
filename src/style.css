@@ -1,0 +1,17 @@
+.hello {
+  color: red;
+  /* background: url('./backgraund.jpg'); */
+  /* width: 100%; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+}
+
+
+body {
+  background: linear-gradient(to bottom, rgba(41, 41, 179, 0.5), rgba(37, 41, 170, 0.5)),
+  url(./backgraund.jpg);
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
