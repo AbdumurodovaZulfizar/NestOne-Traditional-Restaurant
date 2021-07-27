@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(to bottom, rgba(15, 15, 19, 0.7), rgba(15, 15, 19, 0.7)),
-  url(./backgraund.jpg);
+    url(./backgraund.jpg);
   background-position: center;
   background-attachment: fixed;
   width: 100%;
@@ -9,11 +9,11 @@ body {
 }
 
 .black-back {
-  background-color: rgba(0,0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .grey-back {
-  background-color: rgba(0,0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .font-style {
@@ -51,7 +51,9 @@ body {
   transform: scale(1.5, 1.5);
 }
 
-.float-start:hover, .float-end:hover, .p-3:hover {
+.float-start:hover,
+.float-end:hover,
+.p-3:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
