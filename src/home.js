@@ -20,7 +20,6 @@ function createHome(){
 
   const myRest = new Image();
   myRest.src = Rest;
-  // myRest.classList.add("p-3");
   myRest.classList.add("img-size");
 
   const order = document.createElement("h5");

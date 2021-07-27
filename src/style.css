@@ -9,7 +9,7 @@ body {
 }
 
 .black-back {
-  background-color: rgba(0,0, 0, 0.5);
+  background-color: rgba(0,0, 0, 0.6);
 }
 
 .grey-back {
@@ -31,6 +31,10 @@ body {
 
 .img-size {
   width: 600px;
+}
+
+.menu-size {
+  width: 280px;
 }
 
 

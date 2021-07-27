@@ -2,6 +2,7 @@ import _, { create } from 'lodash';
 import './style.css';
 import Logo from './header-logo.png';
 import loadHome from './home';
+import loadMenu from './menu';
 
 const container = document.querySelector(".container1");
 function createHeader() {
@@ -38,7 +39,7 @@ function createNavbar() {
   menuButton.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(menuButton);
-    // loadMenu();
+    loadMenu();
   });
 
   const contactButton = document.createElement("button");
