@@ -3,6 +3,7 @@ import './style.css';
 import Logo from './header-logo.png';
 import loadHome from './home';
 import loadMenu from './menu';
+import loadContact from './contact'
 
 const container = document.querySelector(".container1");
 function createHeader() {
@@ -48,7 +49,7 @@ function createNavbar() {
   contactButton.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(contactButton);
-    // loadContact();
+    loadContact();
   });
   
 
