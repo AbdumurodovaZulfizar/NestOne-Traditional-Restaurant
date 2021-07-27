@@ -51,6 +51,10 @@ body {
   transform: scale(1.5, 1.5);
 }
 
+.float-start:hover, .float-end:hover, .p-3:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .button-nav.active {
   border-bottom: 2px solid #eee;
 }

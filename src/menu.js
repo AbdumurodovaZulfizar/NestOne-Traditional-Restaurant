@@ -58,7 +58,7 @@ function createMenuItem1(name, descriptions, cost, Img) {
   const imgDiv = document.createElement("div");
   const myMenu = new Image();
   myMenu.src = Img;
-  myMenu.classList.add("p-3");
+  myMenu.classList.add("m-3");
   myMenu.classList.add("menu-size");
   imgDiv.appendChild(myMenu);
 
@@ -100,7 +100,7 @@ function createMenuItem2(name, descriptions, cost, Img) {
   const imgDiv1 = document.createElement("div");
   const myMenu1 = new Image();
   myMenu1.src = Img;
-  myMenu1.classList.add("p-3");
+  myMenu1.classList.add("m-3");
   myMenu1.classList.add("menu-size");
   imgDiv1.appendChild(myMenu1);
 
