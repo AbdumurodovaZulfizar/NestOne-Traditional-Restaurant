@@ -1,6 +1,7 @@
 import _, { create } from 'lodash';
 import './style.css';
 import Logo from './header-logo.png';
+import loadHome from './home';
 
 const container = document.querySelector(".container1");
 function createHeader() {
@@ -27,7 +28,7 @@ function createNavbar() {
   homeButton.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(homeButton);
-    // loadHome();
+    loadHome();
   });
 
 
@@ -86,14 +87,16 @@ function createMain() {
 function createFooter(){
   const footer = document.createElement("footer");
   footer.classList.add("black-back");
+  footer.classList.add("mt-5");
 
   const inner_div = document.createElement("div");
-  inner_div.classList.add("container");
-  inner_div.classList.add("row");
+  inner_div.classList.add("px-4");
   inner_div.classList.add("py-3");
+  inner_div.classList.add("d-flex");
+  inner_div.classList.add("flex-row");
+  inner_div.classList.add("justify-content-between");
 
   const first_div = document.createElement("div");
-  first_div.classList.add("col-12");
   const myLogo = new Image();
   myLogo.src = Logo;
   first_div.appendChild(myLogo);
@@ -103,75 +106,41 @@ function createFooter(){
   copy.classList.add("text-white");
   copy.classList.add("main-font");
   copy.innerText = "© 2021 | Zulfizar Abdumurodova";
-  first_div.append(copy);
+  first_div.appendChild(copy);
 
   const second_div = document.createElement("div");
-  second_div.classList.add("col-12");
-  second_div.classList.add("col-md-4");
+  second_div.classList.add("d-flex");
+  second_div.classList.add("flex-row");
+  second_div.classList.add("pt-3");
 
-
-  const sec_div_header = document.createElement("h5");
-  sec_div_header.classList.add("main-font");
-  sec_div_header.classList.add("text-white");
-  sec_div_header.innerText = 'Features';
-
-  second_div.appendChild(sec_div_header);
-
-  const ul1 = document.createElement("ul");
-  ul1.classList.add("list-unstyled");
-  ul1.classList.add("text-small");
-
-  const ul1_li1 = document.createElement("li");
-  ul1_li1.classList.add("mb-1");
-
+  const item1 = document.createElement("div");
   const link1 = document.createElement("a");
-  link1.classList.add("link-secondary");
-  link1.classList.add("text-decoration-none");
-  link1.setAttribute("href", "#");
-  link1.innerText = "Cool staf";
-  ul1_li1.appendChild(link1);
-  ul1.appendChild(ul1_li1);
-
-  const ul1_li2 = document.createElement("li");
-  ul1_li2.classList.add("mb-1");
-
+  link1.setAttribute("href", "https://www.linkedin.com/in/zulfizarabdumurodova/");
+  link1.classList.add("text-white");
+  link1.innerHTML = '<i class="fab fa-linkedin fa-2x px-3"></i>';
+  const item2 = document.createElement("div");
   const link2 = document.createElement("a");
-  link2.classList.add("link-secondary");
-  link2.classList.add("text-decoration-none");
-  link2.setAttribute("href", "#");
-  link2.innerText = "Cool staf";
-  ul1_li2.appendChild(link2);
-  ul1.appendChild(ul1_li2);
-
-  const ul1_li3 = document.createElement("li");
-  ul1_li3.classList.add("mb-1");
-
-  const link3 = document.createElement("a");
-  link3.classList.add("link-secondary");
-  link3.classList.add("text-decoration-none");
-  link3.setAttribute("href", "#");
-  link3.innerText = "Cool staf";
-  ul1_li3.appendChild(link3);
-  ul1.appendChild(ul1_li3);
-
-  const ul1_li4 = document.createElement("li");
-  ul1_li4.classList.add("mb-1");
-
-  const link4 = document.createElement("a");
-  link4.classList.add("link-secondary");
-  link4.classList.add("text-decoration-none");
-  link4.setAttribute("href", "#");
-  link4.innerText = "Cool staf";
-  ul1_li4.appendChild(link4);
-  ul1.appendChild(ul1_li4);
-
+  link2.setAttribute("href", "https://github.com/AbdumurodovaZulfizar");
+  link2.classList.add("text-white");
+  link2.innerHTML = '<i class="fab fa-github fa-2x"></i>';
+  item1.appendChild(link1);
+  item2.appendChild(link2);
+  second_div.appendChild(item1);
+  second_div.appendChild(item2);
   inner_div.appendChild(first_div);
-  second_div.appendChild(ul1);
-  inner_div.appendChild(second_div);
-
-  
+  inner_div.appendChild(second_div)
   footer.appendChild(inner_div);
   return footer;
 }
-container.appendChild(createHeader());
-container.appendChild(createFooter());
+
+
+function createWebsite(){
+  container.appendChild(createHeader());
+  container.appendChild(createMain());
+  container.appendChild(createFooter());
+
+  setActiveButton(document.querySelector(".button-nav"));
+  loadHome();
+}
+
+createWebsite();

@@ -12,6 +12,10 @@ body {
   background-color: rgba(0,0, 0, 0.5);
 }
 
+.grey-back {
+  background-color: rgba(0,0, 0, 0.3);
+}
+
 .font-style {
   font-family: 'Dancing Script', cursive;
   font-size: 60px;
@@ -23,6 +27,10 @@ body {
 
 .main-font {
   font-family: 'Inconsolata', monospace;
+}
+
+.img-size {
+  width: 600px;
 }
 
 
