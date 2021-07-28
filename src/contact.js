@@ -52,7 +52,6 @@ const createContact = () => {
   contactDiv.appendChild(number);
   contactDiv.appendChild(web);
   contactDiv.appendChild(link);
-  // contactDiv.appendChild(address);
   contact.appendChild(contactDiv);
   contact.appendChild(mapDiv);
   parentdiv.appendChild(contact);
