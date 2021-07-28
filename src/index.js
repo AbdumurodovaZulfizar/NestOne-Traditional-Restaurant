@@ -81,7 +81,7 @@ function createMain() {
   return main;
 }
 
-function createFooter(){
+function createFooter() {
   const footer = document.createElement('footer');
   footer.classList.add('black-back');
   footer.classList.add('mt-5');
@@ -113,7 +113,7 @@ function createFooter(){
   const item1 = document.createElement('div');
   const link1 = document.createElement('a');
   link1.setAttribute('href', 'https://www.linkedin.com/in/zulfizarabdumurodova/');
-  link1.classList.add("text-white");
+  link1.classList.add('text-white');
   link1.innerHTML = '<i class="fab fa-linkedin fa-2x px-3"></i>';
   const item2 = document.createElement('div');
   const link2 = document.createElement('a');
@@ -130,7 +130,7 @@ function createFooter(){
   return footer;
 }
 
-function createWebsite(){
+function createWebsite() {
   container.appendChild(createHeader());
   container.appendChild(createMain());
   container.appendChild(createFooter());
