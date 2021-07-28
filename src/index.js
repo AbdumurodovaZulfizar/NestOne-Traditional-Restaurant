@@ -2,7 +2,7 @@ import './style.css';
 import Logo from './header-logo.png';
 import loadHome from './home';
 import loadMenu from './menu';
-import loadContact from './contact';
+import loadContact from './contact'
 
 const container = document.querySelector(".container1");
 
@@ -31,29 +31,31 @@ function createNavbar() {
   const homeButton = document.createElement("button");
   addClass(homeButton);
   homeButton.innerHTML = '<h5>Home</h5>';
-  homeButton.addEventListener('click', (e) => {
-    if (e.target.classList.contains('active')) return;
+  homeButton.addEventListener("click", (e) => {
+    if (e.target.classList.contains("active")) return;
     setActiveButton(homeButton);
     loadHome();
   });
 
-  const menuButton = document.createElement('button');
+
+  const menuButton = document.createElement("button");
   addClass(menuButton);
-  menuButton.innerHTML = '<h5>Menu</h5>';
-  menuButton.addEventListener('click', (e) => {
-    if (e.target.classList.contains('active')) return;
+  menuButton.innerHTML = "<h5>Menu</h5>";
+  menuButton.addEventListener("click", (e) => {
+    if (e.target.classList.contains("active")) return;
     setActiveButton(menuButton);
     loadMenu();
   });
 
-  const contactButton = document.createElement('button');
+  const contactButton = document.createElement("button");
   addClass(contactButton);
   contactButton.innerHTML = '<h5>Contact</h5>';
-  contactButton.addEventListener('click', (e) => {
-    if (e.target.classList.contains('active')) return;
+  contactButton.addEventListener("click", (e) => {
+    if (e.target.classList.contains("active")) return;
     setActiveButton(contactButton);
     loadContact();
   });
+  
 
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);
@@ -77,16 +79,12 @@ function createHeader() {
 }
 
 function createMain() {
-  const main = document.createElement('main');
-  main.classList.add('main');
-  main.setAttribute('id', 'main');
+  const main = document.createElement("main");
+  main.classList.add("main");
+  main.setAttribute("id", "main");
   return main;
 }
 
-function createFooter() {
-  const footer = document.createElement('footer');
-  footer.classList.add('black-back');
-  footer.classList.add('mt-5');
 
 function createFooter(){
   const footer = document.createElement("footer");
@@ -117,15 +115,15 @@ function createFooter(){
   seconddiv.classList.add("flex-row");
   seconddiv.classList.add("pt-3");
 
-  const item1 = document.createElement('div');
-  const link1 = document.createElement('a');
-  link1.setAttribute('href', 'https://www.linkedin.com/in/zulfizarabdumurodova/');
-  link1.classList.add('text-white');
+  const item1 = document.createElement("div");
+  const link1 = document.createElement("a");
+  link1.setAttribute("href", "https://www.linkedin.com/in/zulfizarabdumurodova/");
+  link1.classList.add("text-white");
   link1.innerHTML = '<i class="fab fa-linkedin fa-2x px-3"></i>';
-  const item2 = document.createElement('div');
-  const link2 = document.createElement('a');
-  link2.setAttribute('href', 'https://github.com/AbdumurodovaZulfizar');
-  link2.classList.add('text-white');
+  const item2 = document.createElement("div");
+  const link2 = document.createElement("a");
+  link2.setAttribute("href", "https://github.com/AbdumurodovaZulfizar");
+  link2.classList.add("text-white");
   link2.innerHTML = '<i class="fab fa-github fa-2x"></i>';
   item1.appendChild(link1);
   item2.appendChild(link2);
@@ -137,12 +135,13 @@ function createFooter(){
   return footer;
 }
 
-function createWebsite() {
+
+function createWebsite(){
   container.appendChild(createHeader());
   container.appendChild(createMain());
   container.appendChild(createFooter());
 
-  setActiveButton(document.querySelector('.button-nav'));
+  setActiveButton(document.querySelector(".button-nav"));
   loadHome();
 }
 
