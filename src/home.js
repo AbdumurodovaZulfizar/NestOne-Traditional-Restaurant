@@ -31,7 +31,7 @@ const createHome = () => {
   home.appendChild(order);
 
   return home;
-}
+};
 
 export default function loadHome() {
   const main = document.getElementById('main');

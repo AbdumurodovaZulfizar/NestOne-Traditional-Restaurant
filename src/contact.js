@@ -56,7 +56,7 @@ const createContact = () => {
   contact.appendChild(mapDiv);
   parentdiv.appendChild(contact);
   return parentdiv;
-}
+};
 
 export default function loadContact() {
   const main = document.getElementById('main');

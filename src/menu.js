@@ -42,7 +42,7 @@ const createMenuItem1 = (name, descriptions, cost, Img) => {
   itemDiv.appendChild(imgDiv);
 
   return itemDiv;
-}
+};
 
 const createMenuItem2 = (name, descriptions, cost, Img) => {
   const itemDiv1 = document.createElement('div');
@@ -83,7 +83,7 @@ const createMenuItem2 = (name, descriptions, cost, Img) => {
   itemDiv1.appendChild(textDiv1);
 
   return itemDiv1;
-}
+};
 
 const createMenu = () => {
   const parentdiv = document.createElement('div');
@@ -105,7 +105,7 @@ const createMenu = () => {
 
   parentdiv.appendChild(menu);
   return parentdiv;
-}
+};
 
 export default function loadMenu() {
   const main = document.getElementById('main');

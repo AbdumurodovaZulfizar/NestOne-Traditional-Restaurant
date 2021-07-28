@@ -15,13 +15,13 @@ const setActiveButton = (button) => {
     }
   });
   button.classList.add('active');
-}
+};
 
 const addClass = (button) => {
   button.classList.add('button-nav');
   button.classList.add('mx-3');
   button.classList.add('main-font');
-}
+};
 
 const createNavbar = () => {
   const nav = document.createElement('nav');
@@ -58,7 +58,7 @@ const createNavbar = () => {
   nav.appendChild(contactButton);
 
   return nav;
-}
+};
 
 const createHeader = () => {
   const header = document.createElement('header');
@@ -72,14 +72,14 @@ const createHeader = () => {
   header.appendChild(text);
   header.appendChild(createNavbar());
   return header;
-}
+};
 
 const createMain = () => {
   const main = document.createElement('main');
   main.classList.add('main');
   main.setAttribute('id', 'main');
   return main;
-}
+};
 
 const createFooter = () => {
   const footer = document.createElement('footer');
@@ -128,7 +128,7 @@ const createFooter = () => {
   innerdiv.appendChild(seconddiv);
   footer.appendChild(innerdiv);
   return footer;
-}
+};
 
 const createWebsite = () => {
   container.appendChild(createHeader());
@@ -136,6 +136,6 @@ const createWebsite = () => {
   container.appendChild(createFooter());
   setActiveButton(document.querySelector('.button-nav'));
   loadHome();
-}
+};
 
 createWebsite();
