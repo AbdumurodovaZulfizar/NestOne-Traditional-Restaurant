@@ -5,7 +5,7 @@ import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
 
-const container = document.querySelector('.container1');
+const container = document.querySelector('#container1');
 
 
 function addClass(button) {
