@@ -88,7 +88,6 @@ function createFooter() {
   footer.classList.add('black-back');
   footer.classList.add('mt-5');
 
-<<<<<<< HEAD
 function createFooter(){
   const footer = document.createElement("footer");
   footer.classList.add("black-back");
@@ -102,21 +101,10 @@ function createFooter(){
   innerdiv.classList.add("justify-content-between");
 
   const firstdiv = document.createElement("div");
-=======
-  const inner_div = document.createElement('div');
-  inner_div.classList.add('px-4');
-  inner_div.classList.add('py-3');
-  inner_div.classList.add('d-flex');
-  inner_div.classList.add('flex-row');
-  inner_div.classList.add('justify-content-between');
-
-  const first_div = document.createElement('div');
->>>>>>> 229d7c2f18976f7dbc508b6682f9968d29667f41
   const myLogo = new Image();
   myLogo.src = Logo;
   firstdiv.appendChild(myLogo);
 
-<<<<<<< HEAD
   const copy = document.createElement("small");
   copy.classList.add("d-block");
   copy.classList.add("text-white");
@@ -128,19 +116,6 @@ function createFooter(){
   seconddiv.classList.add("d-flex");
   seconddiv.classList.add("flex-row");
   seconddiv.classList.add("pt-3");
-=======
-  const copy = document.createElement('small');
-  copy.classList.add('d-block');
-  copy.classList.add('text-white');
-  copy.classList.add('main-font');
-  copy.innerText = '© 2021 | Zulfizar Abdumurodova';
-  first_div.appendChild(copy);
-
-  const second_div = document.createElement('div');
-  second_div.classList.add('d-flex');
-  second_div.classList.add('flex-row');
-  second_div.classList.add('pt-3');
->>>>>>> 229d7c2f18976f7dbc508b6682f9968d29667f41
 
   const item1 = document.createElement('div');
   const link1 = document.createElement('a');
