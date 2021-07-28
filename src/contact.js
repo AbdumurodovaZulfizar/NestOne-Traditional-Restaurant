@@ -1,4 +1,4 @@
-function createContact() {
+const createContact = () => {
   const parentdiv = document.createElement('div');
   parentdiv.classList.add('row');
   const contact = document.createElement('div');
@@ -59,10 +59,8 @@ function createContact() {
   return parentdiv;
 }
 
-function loadContact() {
+export default function loadContact() {
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createContact());
 }
-
-export default loadContact;

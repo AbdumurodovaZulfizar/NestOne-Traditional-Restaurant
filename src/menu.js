@@ -3,7 +3,7 @@ import Manti from './manti.jpg';
 import Somsa from './somsa.jpg';
 import Shashlik from './shashlik.jpg';
 
-function createMenuItem1(name, descriptions, cost, Img) {
+const createMenuItem1 = (name, descriptions, cost, Img) => {
   const itemDiv = document.createElement('div');
   itemDiv.classList.add('menu-item');
   itemDiv.classList.add('black-back');
@@ -44,7 +44,7 @@ function createMenuItem1(name, descriptions, cost, Img) {
   return itemDiv;
 }
 
-function createMenuItem2(name, descriptions, cost, Img) {
+const createMenuItem2 = (name, descriptions, cost, Img) => {
   const itemDiv1 = document.createElement('div');
   itemDiv1.classList.add('menu-item');
   itemDiv1.classList.add('black-back');
@@ -85,7 +85,7 @@ function createMenuItem2(name, descriptions, cost, Img) {
   return itemDiv1;
 }
 
-function createMenu() {
+const createMenu = () => {
   const parentdiv = document.createElement('div');
   parentdiv.classList.add('row');
   const menu = document.createElement('div');

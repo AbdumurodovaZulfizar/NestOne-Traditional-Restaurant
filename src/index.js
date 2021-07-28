@@ -6,7 +6,7 @@ import loadContact from './contact';
 
 const container = document.querySelector('.container1');
 
-function setActiveButton(button) {
+const setActiveButton = (button) => {
   const buttons = document.querySelectorAll('.button-nav');
 
   buttons.forEach((button) => {
@@ -17,13 +17,13 @@ function setActiveButton(button) {
   button.classList.add('active');
 }
 
-function addClass(button) {
+const addClass = (button) => {
   button.classList.add('button-nav');
   button.classList.add('mx-3');
   button.classList.add('main-font');
 }
 
-function createNavbar() {
+const createNavbar = () => {
   const nav = document.createElement('nav');
   nav.classList.add('py-3');
   const homeButton = document.createElement('button');
@@ -60,7 +60,7 @@ function createNavbar() {
   return nav;
 }
 
-function createHeader() {
+const createHeader = () => {
   const header = document.createElement('header');
   header.classList.add('text-center');
   header.classList.add('black-back');
@@ -74,14 +74,14 @@ function createHeader() {
   return header;
 }
 
-function createMain() {
+const createMain = () => {
   const main = document.createElement('main');
   main.classList.add('main');
   main.setAttribute('id', 'main');
   return main;
 }
 
-function createFooter() {
+const createFooter = () => {
   const footer = document.createElement('footer');
   footer.classList.add('black-back');
   footer.classList.add('mt-5');
@@ -130,7 +130,7 @@ function createFooter() {
   return footer;
 }
 
-function createWebsite() {
+const createWebsite = () => {
   container.appendChild(createHeader());
   container.appendChild(createMain());
   container.appendChild(createFooter());
