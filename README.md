@@ -30,6 +30,10 @@ cd NestOne-Traditional-Restaurant
 - run `npm install` to install all required node modules
 - if you vant to see live version on your local machine run `npm run build` and open live server
 
+### Live Version
+
+-[Restaurant Page](https://abdumurodovazulfizar.github.io/NestOne-Traditional-Restaurant/)
+
 ## Authors
 
 🏻‍💼 **Zulfizar Abdumurodova**
