@@ -1,6 +1,6 @@
 import Rest from './rest.jpg';
 
-function createHome() {
+const createHome = () => {
   const parentdiv = document.createElement('div');
   parentdiv.classList.add('row');
   const home = document.createElement('div');
@@ -31,7 +31,7 @@ function createHome() {
   home.appendChild(order);
 
   return home;
-}
+};
 
 export default function loadHome() {
   const main = document.getElementById('main');

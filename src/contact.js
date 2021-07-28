@@ -1,8 +1,4 @@
-import {
-  map,
-} from 'lodash';
-
-function createContact() {
+const createContact = () => {
   const parentdiv = document.createElement('div');
   parentdiv.classList.add('row');
   const contact = document.createElement('div');
@@ -56,17 +52,14 @@ function createContact() {
   contactDiv.appendChild(number);
   contactDiv.appendChild(web);
   contactDiv.appendChild(link);
-  // contactDiv.appendChild(address);
   contact.appendChild(contactDiv);
   contact.appendChild(mapDiv);
   parentdiv.appendChild(contact);
   return parentdiv;
-}
+};
 
-function loadContact() {
+export default function loadContact() {
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createContact());
 }
-
-export default loadContact;

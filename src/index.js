@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 import Logo from './header-logo.png';
 import loadHome from './home';
@@ -7,17 +6,26 @@ import loadContact from './contact';
 
 const container = document.querySelector('#container1');
 
+const setActiveButton = (button) => {
+  const buttons = document.querySelectorAll('.button-nav');
 
-function addClass(button) {
+  buttons.forEach((button) => {
+    if (button !== this) {
+      button.classList.remove('active');
+    }
+  });
+  button.classList.add('active');
+};
+
+const addClass = (button) => {
   button.classList.add('button-nav');
   button.classList.add('mx-3');
   button.classList.add('main-font');
-}
+};
 
-function createNavbar() {
+const createNavbar = () => {
   const nav = document.createElement('nav');
   nav.classList.add('py-3');
-
   const homeButton = document.createElement('button');
   addClass(homeButton);
   homeButton.innerHTML = '<h5>Home</h5>';
@@ -50,9 +58,9 @@ function createNavbar() {
   nav.appendChild(contactButton);
 
   return nav;
-}
+};
 
-function createHeader() {
+const createHeader = () => {
   const header = document.createElement('header');
   header.classList.add('text-center');
   header.classList.add('black-back');
@@ -64,55 +72,43 @@ function createHeader() {
   header.appendChild(text);
   header.appendChild(createNavbar());
   return header;
-}
+};
 
-function setActiveButton(button) {
-  const buttons = document.querySelectorAll('.button-nav');
-
-  buttons.forEach((button) => {
-    if (button !== this) {
-      button.classList.remove('active');
-    }
-  });
-
-  button.classList.add('active');
-}
-
-function createMain() {
+const createMain = () => {
   const main = document.createElement('main');
   main.classList.add('main');
   main.setAttribute('id', 'main');
   return main;
-}
+};
 
-function createFooter() {
+const createFooter = () => {
   const footer = document.createElement('footer');
   footer.classList.add('black-back');
   footer.classList.add('mt-5');
 
-  const inner_div = document.createElement('div');
-  inner_div.classList.add('px-4');
-  inner_div.classList.add('py-3');
-  inner_div.classList.add('d-flex');
-  inner_div.classList.add('flex-row');
-  inner_div.classList.add('justify-content-between');
+  const innerdiv = document.createElement('div');
+  innerdiv.classList.add('px-4');
+  innerdiv.classList.add('py-3');
+  innerdiv.classList.add('d-flex');
+  innerdiv.classList.add('flex-row');
+  innerdiv.classList.add('justify-content-between');
 
-  const first_div = document.createElement('div');
+  const firstdiv = document.createElement('div');
   const myLogo = new Image();
   myLogo.src = Logo;
-  first_div.appendChild(myLogo);
+  firstdiv.appendChild(myLogo);
 
   const copy = document.createElement('small');
   copy.classList.add('d-block');
   copy.classList.add('text-white');
   copy.classList.add('main-font');
   copy.innerText = '© 2021 | Zulfizar Abdumurodova';
-  first_div.appendChild(copy);
+  firstdiv.appendChild(copy);
 
-  const second_div = document.createElement('div');
-  second_div.classList.add('d-flex');
-  second_div.classList.add('flex-row');
-  second_div.classList.add('pt-3');
+  const seconddiv = document.createElement('div');
+  seconddiv.classList.add('d-flex');
+  seconddiv.classList.add('flex-row');
+  seconddiv.classList.add('pt-3');
 
   const item1 = document.createElement('div');
   const link1 = document.createElement('a');
@@ -126,21 +122,20 @@ function createFooter() {
   link2.innerHTML = '<i class="fab fa-github fa-2x"></i>';
   item1.appendChild(link1);
   item2.appendChild(link2);
-  second_div.appendChild(item1);
-  second_div.appendChild(item2);
-  inner_div.appendChild(first_div);
-  inner_div.appendChild(second_div);
-  footer.appendChild(inner_div);
+  seconddiv.appendChild(item1);
+  seconddiv.appendChild(item2);
+  innerdiv.appendChild(firstdiv);
+  innerdiv.appendChild(seconddiv);
+  footer.appendChild(innerdiv);
   return footer;
-}
+};
 
-function createWebsite() {
+const createWebsite = () => {
   container.appendChild(createHeader());
   container.appendChild(createMain());
   container.appendChild(createFooter());
-
   setActiveButton(document.querySelector('.button-nav'));
   loadHome();
-}
+};
 
 createWebsite();

@@ -1,5 +1,6 @@
 body {
-  background: linear-gradient(to bottom, rgba(15, 15, 19, 0.7), rgba(15, 15, 19, 0.7)),
+  background:
+    linear-gradient(to bottom, rgba(15, 15, 19, 0.7), rgba(15, 15, 19, 0.7)),
     url(./backgraund.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -36,7 +37,6 @@ body {
 .menu-size {
   width: 280px;
 }
-
 
 .button-nav {
   padding: 10px;
