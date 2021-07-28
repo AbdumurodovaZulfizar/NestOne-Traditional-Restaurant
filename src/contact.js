@@ -58,7 +58,7 @@ const createContact = () => {
   return parentdiv;
 };
 
-export const loadContact = () => {
+export const loadContact = () => { // eslint-disable-line
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createContact());

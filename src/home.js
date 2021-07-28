@@ -33,7 +33,7 @@ const createHome = () => {
   return home;
 };
 
-export const loadHome = () => {
+export const loadHome = () => { // eslint-disable-line
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createHome());

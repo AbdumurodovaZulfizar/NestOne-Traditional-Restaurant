@@ -107,7 +107,7 @@ const createMenu = () => {
   return parentdiv;
 };
 
-export const loadMenu = () => {
+export const loadMenu = () => { // eslint-disable-line
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createMenu());
