@@ -1,5 +1,3 @@
-import { map } from "lodash";
-
 function createContact() {
   const parentdiv = document.createElement("div");
   parentdiv.classList.add("row")
