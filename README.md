@@ -32,7 +32,7 @@ cd NestOne-Traditional-Restaurant
 
 ### Live Version
 
--[Restaurant Page](https://abdumurodovazulfizar.github.io/NestOne-Traditional-Restaurant/)
+[Restaurant Page](https://abdumurodovazulfizar.github.io/NestOne-Traditional-Restaurant/)
 
 ## Authors
 
