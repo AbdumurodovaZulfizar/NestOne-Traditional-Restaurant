@@ -58,8 +58,8 @@ const createContact = () => {
   return parentdiv;
 };
 
-export default function loadContact() {
+export const loadContact = () => {
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createContact());
-}
+};

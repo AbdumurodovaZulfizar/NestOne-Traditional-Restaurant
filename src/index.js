@@ -1,8 +1,8 @@
 import './style.css';
 import Logo from './header-logo.png';
-import loadHome from './home';
-import loadMenu from './menu';
-import loadContact from './contact';
+import { loadHome } from './home';
+import { loadMenu } from './menu';
+import { loadContact } from './contact';
 
 const container = document.querySelector('#container1');
 

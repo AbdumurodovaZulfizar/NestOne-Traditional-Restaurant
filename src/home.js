@@ -33,8 +33,8 @@ const createHome = () => {
   return home;
 };
 
-export default function loadHome() {
+export const loadHome = () => {
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createHome());
-}
+};

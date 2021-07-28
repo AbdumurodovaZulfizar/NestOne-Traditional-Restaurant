@@ -107,8 +107,8 @@ const createMenu = () => {
   return parentdiv;
 };
 
-export default function loadMenu() {
+export const loadMenu = () => {
   const main = document.getElementById('main');
   main.textContent = '';
   main.appendChild(createMenu());
-}
+};
