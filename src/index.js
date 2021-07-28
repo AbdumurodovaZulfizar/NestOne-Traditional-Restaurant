@@ -154,19 +154,11 @@ function createFooter(){
   link2.innerHTML = '<i class="fab fa-github fa-2x"></i>';
   item1.appendChild(link1);
   item2.appendChild(link2);
-<<<<<<< HEAD
   seconddiv.appendChild(item1);
   seconddiv.appendChild(item2);
   innerdiv.appendChild(firstdiv);
   innerdiv.appendChild(seconddiv)
   footer.appendChild(innerdiv);
-=======
-  second_div.appendChild(item1);
-  second_div.appendChild(item2);
-  inner_div.appendChild(first_div);
-  inner_div.appendChild(second_div);
-  footer.appendChild(inner_div);
->>>>>>> 229d7c2f18976f7dbc508b6682f9968d29667f41
   return footer;
 }
 
