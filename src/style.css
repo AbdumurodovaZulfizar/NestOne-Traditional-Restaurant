@@ -1,0 +1,62 @@
+body {
+  background:
+    linear-gradient(to bottom, rgba(15, 15, 19, 0.7), rgba(15, 15, 19, 0.7)),
+    url(./backgraund.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.black-back {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.grey-back {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.font-style {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+}
+
+.font {
+  font-family: 'Crimson Text', serif;
+}
+
+.main-font {
+  font-family: 'Inconsolata', monospace;
+}
+
+.img-size {
+  width: 600px;
+}
+
+.menu-size {
+  width: 280px;
+}
+
+.button-nav {
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  transition: transform 0.3s;
+}
+
+.button-nav:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.float-start:hover,
+.float-end:hover,
+.p-3:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-nav.active {
+  border-bottom: 2px solid #eee;
+}
