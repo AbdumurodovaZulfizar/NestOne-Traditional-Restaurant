@@ -64,6 +64,8 @@ const createHeader = () => {
   const header = document.createElement('header');
   header.classList.add('text-center');
   header.classList.add('black-back');
+  header.classList.add("col-12");
+  header.classList.add("m-0");
   header.innerHTML = '<h1 class="text-white py-4 font-style">NestOne Restaurant</h1>';
   const text = document.createElement('h4');
   text.innerText = 'Reastaurant is one of the thirty three services of Nest Zone';

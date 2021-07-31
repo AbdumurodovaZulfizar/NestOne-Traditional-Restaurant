@@ -7,14 +7,14 @@ const createMenuItem1 = (name, descriptions, cost, Img) => {
   const itemDiv = document.createElement('div');
   itemDiv.classList.add('menu-item');
   itemDiv.classList.add('black-back');
-  itemDiv.classList.add('d-flex');
-  itemDiv.classList.add('flex-row');
-  itemDiv.classList.add('col-10');
-  itemDiv.classList.add('float-start');
-  itemDiv.classList.add('m-3');
+  itemDiv.classList.add('col-11');
+  itemDiv.classList.add("mx-auto");
+  itemDiv.classList.add('float-lg-start');
+  itemDiv.classList.add('my-3');
 
   const textDiv = document.createElement('div');
   textDiv.classList.add('p-2');
+  textDiv.classList.add("text-div");
   const nameOfFood = document.createElement('h4');
   nameOfFood.classList.add('font');
   nameOfFood.classList.add('text-center');
@@ -34,13 +34,12 @@ const createMenuItem1 = (name, descriptions, cost, Img) => {
   const imgDiv = document.createElement('div');
   const myMenu = new Image();
   myMenu.src = Img;
-  myMenu.classList.add('m-3');
-  myMenu.classList.add('menu-size');
+  myMenu.classList.add('m-2');
+  myMenu.classList.add('menu-size-1');
   imgDiv.appendChild(myMenu);
 
-  itemDiv.appendChild(textDiv);
   itemDiv.appendChild(imgDiv);
-
+  itemDiv.appendChild(textDiv);
   return itemDiv;
 };
 
@@ -48,11 +47,10 @@ const createMenuItem2 = (name, descriptions, cost, Img) => {
   const itemDiv1 = document.createElement('div');
   itemDiv1.classList.add('menu-item');
   itemDiv1.classList.add('black-back');
-  itemDiv1.classList.add('d-flex');
-  itemDiv1.classList.add('flex-row');
-  itemDiv1.classList.add('col-10');
-  itemDiv1.classList.add('float-end');
-  itemDiv1.classList.add('m-3');
+  itemDiv1.classList.add('col-11');
+  itemDiv1.classList.add("mx-auto");
+  itemDiv1.classList.add('float-lg-end');
+  itemDiv1.classList.add('my-3');
 
   const textDiv1 = document.createElement('div');
   textDiv1.classList.add('p-2');
@@ -75,25 +73,27 @@ const createMenuItem2 = (name, descriptions, cost, Img) => {
   const imgDiv1 = document.createElement('div');
   const myMenu1 = new Image();
   myMenu1.src = Img;
-  myMenu1.classList.add('m-3');
-  myMenu1.classList.add('menu-size');
+  myMenu1.classList.add('m-2');
+  myMenu1.classList.add('menu-size-2');
   imgDiv1.appendChild(myMenu1);
 
   itemDiv1.appendChild(imgDiv1);
   itemDiv1.appendChild(textDiv1);
-
   return itemDiv1;
 };
 
 const createMenu = () => {
   const parentdiv = document.createElement('div');
   parentdiv.classList.add('row');
+  parentdiv.classList.add("m-0");
   const menu = document.createElement('div');
-  menu.classList.add('m-5');
+  menu.classList.add('my-5');
   menu.classList.add('grey-back');
+  menu.classList.add("mx-0");
   menu.classList.add('text-white');
-  menu.classList.add('col-6');
-  menu.classList.add('mx-auto');
+  menu.classList.add('col-12');
+  menu.classList.add("col-lg-6");
+  menu.classList.add('mx-lg-auto');
 
   menu.appendChild(createMenuItem1('Plov', 'Plov is Uzbek traditional food that is cooked with tons of rice sometimes, beacouse it is extremely delicious, every foreign guest says that "Words really fail to describe its taste." \n Required products: Rice, Carrot, Onion, Meat, Oil, Peas, Raisins, Solt, etc...', '35$', Plov));
 

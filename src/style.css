@@ -34,8 +34,8 @@ body {
   width: 600px;
 }
 
-.menu-size {
-  width: 280px;
+.menu-size-1, .menu-size-2 {
+  width: 250px;
 }
 
 .button-nav {
@@ -51,8 +51,8 @@ body {
   transform: scale(1.5, 1.5);
 }
 
-.float-start:hover,
-.float-end:hover,
+.float-lg-start:hover,
+.float-lg-end:hover,
 .p-3:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -71,10 +71,25 @@ body {
   .img-size {
     width: 500px;
   }
+
+  .menu-size-1 {
+    width: 280px;
+    float: right;
+    top: 0px;
+    right: 0px;
+  }
+
+  .menu-size-2 {
+    width: 280px;
+    float: left;
+    top: 0px;
+    right: 0px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .img-size {
     width: 600px;
   }
+
 }
