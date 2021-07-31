@@ -25,6 +25,7 @@ cd NestOne-Traditional-Restaurant
 ### Prerequisites
 
 - Node
+- Webpack
 
 ### Setup
 - run `npm install` to install all required node modules
