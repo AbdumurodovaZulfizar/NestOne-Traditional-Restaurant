@@ -60,3 +60,21 @@ body {
 .button-nav.active {
   border-bottom: 2px solid #eee;
 }
+
+@media screen and (max-width: 425px) {
+  .img-size {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-size {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .img-size {
+    width: 600px;
+  }
+}

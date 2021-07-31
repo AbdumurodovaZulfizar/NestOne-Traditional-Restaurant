@@ -8,7 +8,8 @@ const createHome = () => {
   home.classList.add('grey-back');
   home.classList.add('text-center');
   home.classList.add('text-white');
-  home.classList.add('col-6');
+  home.classList.add('col-12');
+  home.classList.add("col-lg-6")
   home.classList.add('mx-auto');
 
   const paragraph = document.createElement('h4');
