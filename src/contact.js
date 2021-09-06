@@ -1,13 +1,13 @@
 const createContact = () => {
   const parentdiv = document.createElement('div');
   parentdiv.classList.add('row');
-  parentdiv.classList.add("m-0");
+  parentdiv.classList.add('m-1');
   const contact = document.createElement('div');
   contact.classList.add('m-5');
   contact.classList.add('grey-back');
   contact.classList.add('text-white');
   contact.classList.add('col-12');
-  contact.classList.add("col-lg-6");
+  contact.classList.add('col-lg-6');
   contact.classList.add('mx-auto');
 
   const contactDiv = document.createElement('div');
